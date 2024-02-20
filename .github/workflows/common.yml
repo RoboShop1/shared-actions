@@ -10,7 +10,7 @@ jobs:
         if: ${{ github.event.inputs.environment == 'DEV' }}
       - name: Qa
         run: echo "This is Qa-Stage"
-        if: ${{ github.event.inputs.environment == 'DEV' }}
+        if: ${{ github.event.inputs.environment == 'QA' }}
       - name: Prod
         run: echo "This is Prod-Stage"
-        if: ${{ github.event.inputs.environment == 'DEV' }}
+        if: ${{ github.event.inputs.environment == 'PROD' }}
