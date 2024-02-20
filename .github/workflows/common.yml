@@ -4,6 +4,8 @@ on: [workflow_call]
 jobs:
   job1:
     runs-on: ubuntu-latest
+    env: 
+      environment: ${{ github.event.inputs.name }}
     steps:
       - name: Dev
         run: echo "This is Dev-Stage"
